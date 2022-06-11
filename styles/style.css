@@ -1,0 +1,167 @@
+.title h1 {
+    font-weight: 700;
+    color: #ff8e30;
+}
+
+.bg-info-color {
+    background-color: #f8f8f8;
+}
+
+ul.expenses-info li {
+    list-style: none;
+    padding: 10px 0px;
+}
+
+h3.income-title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+span.details {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 14px;
+}
+
+span.clothes-details {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 10px;
+    margin-left: -19px;
+}
+
+span.income-details {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+h3.expenses-title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 2px;
+    margin-top: 24px;
+}
+
+input#income-input {
+    background-color: #dcdcdc;
+    border: none;
+    padding: 6px 18px;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-left: 26px;
+}
+
+input#food-input {
+    background-color: #dcdcdc;
+    border: none;
+    padding: 6px 18px;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+input#rent-input {
+    background-color: #dcdcdc;
+    border: none;
+    padding: 6px 18px;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+input#clothes-input {
+    background-color: #dcdcdc;
+    border: none;
+    padding: 6px 18px;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-right: 0px;
+}
+
+button#calculate-button {
+    border: none;
+    background-color: #ff8e30;
+    padding: 8px 36px;
+    font-size: 19px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+button#calculate-button:hover {
+    background-color: #383535;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+h3#expenses-title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 2px;
+    margin-top: 24px;
+}
+
+h3#balance-title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+input#save-input {
+    background-color: #dcdcdc;
+    border: none;
+    padding: 6px 18px;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+span#save-title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 14px;
+}
+
+button#save-button {
+    border: none;
+    background-color: #ff8e30;
+    padding: 6px 50px;
+    font-size: 19px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    text-transform: capitalize;
+    margin-left: 12px;
+}
+
+button#save-button:hover {
+    background-color: #383535;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+span#modulus {
+    margin-left: 10px;
+    margin-right: 5px;
+    font-weight: 700;
+}
+
+h3#saving-title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+h3#remaining-title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
