@@ -18,9 +18,9 @@ function getTotalExpenses() {
     const clothesInput = document.getElementById('clothes-input');
     const clothesInputText = clothesInput.value;
     const coltheAmountValue = parseFloat(clothesInputText);
-    if(!isNaN(foodAmountValue) && !isNaN(rentAmountValue) && !isNaN(coltheAmountValue)) {
+    if (!isNaN(foodAmountValue) && !isNaN(rentAmountValue) && !isNaN(coltheAmountValue)) {
         const expensesItemAmount = foodAmountValue + rentAmountValue + coltheAmountValue;
-    // total expenses amount..!
+        // total expenses amount..!
         const expensesAmount = document.getElementById('expenses-amount');
         const expensesAmountText = expensesAmount.innerText;
         const expensesAmountValue = parseFloat(expensesAmountText);
@@ -29,7 +29,7 @@ function getTotalExpenses() {
         return updateExpensesTotalAmount;
     }
     else {
-        alert ('Please enter the number..!')
+        alert('Please enter the number..!')
         const valueCencle = document.getElementById('expenses-amount').innerText = null;
         return valueCencle;
     }
@@ -39,7 +39,7 @@ function getTotalExpenses() {
 function totalBalance() {
     const expensesTotalAmount = getTotalExpenses();
     const totalIncomeAmount = getIncomeAmount();
-    if(totalIncomeAmount < expensesTotalAmount || totalIncomeAmount < 0) {
+    if (totalIncomeAmount < expensesTotalAmount || totalIncomeAmount < 0) {
         alert('Sorry the balance of expenses is not possible');
         getTotalExpenses();
     }
@@ -48,7 +48,7 @@ function totalBalance() {
         const totalBalanceText = totalBalance.innerText;
         const totalBalanceValue = parseFloat(totalBalanceText);
         const newTotalBalance = totalIncomeAmount + totalBalanceValue;
-        
+
         const updateTotalBalance = newTotalBalance - expensesTotalAmount;
         totalBalance.innerText = updateTotalBalance;
     }
@@ -61,25 +61,25 @@ function getSavingAmount() {
     const savingInputValue = parseFloat(savingInputText);
     const savingTotalAmount = (totalIncomeAmount / 100) * savingInputValue;
     document.getElementById('saving-amount').innerText = savingTotalAmount;
-} 
+}
 
 // handle calculate button event..!
-document.getElementById('calculate-button').addEventListener('click', function (){    
+document.getElementById('calculate-button').addEventListener('click', function () {
     totalBalance();
 })
 
 // handle save button event..!
-document.getElementById('save-button').addEventListener('click', function (){
+document.getElementById('save-button').addEventListener('click', function () {
     getSavingAmount();
     const saveAmountTotal = document.getElementById('saving-amount').innerText;
     const expensesAmount = document.getElementById('total-balance').innerText;
 
-    if(expensesAmount > saveAmountTotal){
+    if (expensesAmount > saveAmountTotal) {
         const remaining = document.getElementById('remaining-balance');
         const sum = parseFloat(expensesAmount) - parseFloat(saveAmountTotal);
         remaining.innerText = sum;
     }
-    else{
+    else {
         alert('Please enter the number..!')
     }
 })
