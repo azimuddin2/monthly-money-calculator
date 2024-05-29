@@ -17,35 +17,48 @@
 <body>
   <header class="container">
     <div class="title">
-      <h1 class="text-center mt-5">Monthly Expenses Calculator</h1>
+      <h1 class="text-center mt-5">Monthly Expenses <span class="calculator">Calculator</span></h1>
     </div>
   </header>
   <main>
     <section class="container my-4">
-      <div>
-        <div class="row g-5" style="height: 650px;">
-          <div class="col-lg-7 col-sm-12 text-center">
-            <img src="images/calculator-with-money-1.jpg" class="img-fluid mx-auto rounded-start h-75 w-75 " alt="...">
-          </div>
-          <div class="col-lg-5 col-sm-12 bg-info-color rounded">
-            <div class="card-body pt-5 text-center">
-              <h3 class="income-title">Income</h3>
-              <span class="income-details">Income:</span><input id="income-input" type="text">
-              <h3 class="expenses-title">Expenses</h3>
+      <div class="row g-5">
+        <div class="col-lg-6 col-sm-12 d-flex align-items-center">
+          <img src="images/calculator.gif" class="img-fluid mx-auto" alt="...">
+        </div>
+        <div class="col-lg-5 col-sm-12 bg-info-color rounded">
+          <div class="card-body pt-5">
+            <div class="text-center">
+              <h3 class="income-title text-center">Income</h3>
+              <input id="income-input" type="number" placeholder="Type here" required>
+            </div>
+            <div class="my-3 p-4">
+              <h3 class="expenses-title text-center">Expenses</h3>
               <ul class="expenses-info">
-                <li><span class="details">Food:</span><input id="food-input" type="text"></li>
-                <li><span class="details">Rent:</span><input id="rent-input" type="text"></li>
-                <li> <span class="clothes-details">Clothes:</span><input id="clothes-input" type="text"></li>
+                <li>
+                  <span class="details">Food:</span>
+                  <input id="food-input" type="number" placeholder="Type here" required>
+                </li>
+                <li>
+                  <span class="details">Rent:</span>
+                  <input id="rent-input" type="number" placeholder="Type here" required>
+                </li>
+                <li>
+                  <span class="clothes-details">Clothes:</span>
+                  <input id="clothes-input" type="number" placeholder="Type here" required>
+                </li>
               </ul>
-              <button id="calculate-button">Calculate</button>
-              <div>
-                <h3 id="expenses-title">Total Expenses: $<span id="expenses-amount">00</span></h3>
-                <h3 id="balance-title">Balance: $<span id="total-balance">00</span></h3>
-                <span id="save-title">Save:</span><input id="save-input" type="text">
-                <span id="modulus">%</span><button id="save-button">Save</button>
-                <h3 id="saving-title">Saving Amount: $<span id="saving-amount">00</span></h3>
-                <h3 id="remaining-title">Remaining Balance: $<span id="remaining-balance">00</span></h3>
+              <div class="text-center">
+                <button id="calculate-button">Calculate</button>
               </div>
+              <h3 id="expenses-title">Total Expenses: $<span id="expenses-amount">00</span></h3>
+              <h3 id="balance-title">Balance: $<span id="total-balance">00</span></h3>
+            </div>
+            <div class="text-center">
+              <span id="save-title">Save:</span><input id="save-input" type="text" placeholder="Type here">
+              <span id="modulus">%</span><button id="save-button">Save</button>
+              <h3 id="saving-title">Saving Amount: $<span id="saving-amount">00</span></h3>
+              <h3 id="remaining-title">Remaining Balance: $<span id="remaining-balance">00</span></h3>
             </div>
           </div>
         </div>
